@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
         2.Add noodles and green vegetables to the boiling water.<br>
         3.Cook until the noodles are tender and the greens are vibrant.</p><br>
     
-      <h4>STEP 3: Assemble the Dish</h4>
+      <h4>STEP3: Assemble the Dish</h4>
       <p class="w3-text-grey">1.Once cooked, drain the noodles and vegetables, then transfer them directly into the prepared seasoning bowl.<br>
         2.Mix thoroughly to dissolve the lard and evenly coat the noodles with the flavorful sauce.<br>
         3.Top your bowl with a crispy fried egg for extra richness and texture!</p><br>
@@ -96,20 +96,52 @@ h1, h2, h3, h4, h5, h6 {
   <hr>
 
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <h1>Contact</h1><br>
-    <p>This aromatic and spicy Chongqing-style noodle dish is a beloved street food classic. Perfect for a quick, satisfying meal that packs a punch of flavor! Discover the soul of Chongqing, one fiery noodle at a time.</p>
-    <p class="w3-text-blue-grey w3-large"><b>Xiaomian Restaurant, 55nd Living St, 401122 Chongqing, CQ</b></p>
-    <p>You can also contact us by phone 59584052 or email 24462578@life.hkbu.edu.hk, or you can send us a message here:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
+  <!-- 在原有代码基础上修改表单部分 -->
+<div class="w3-container w3-padding-64" id="contact">
+  <h1>Contact</h1><br>
+  <p>This aromatic and spicy Chongqing-style noodle dish is a beloved street food classic. Perfect for a quick, satisfying meal that packs a punch of flavor! Discover the soul of Chongqing, one fiery noodle at a time.</p>
+      <p class="w3-text-blue-grey w3-large"><b>Xiaomian Restaurant, 55nd Living St, 401122 Chongqing, CQ</b></p>
+      <p>You can also contact us by phone 59584052 or email 24462578@life.hkbu.edu.hk, or you can send us a message here:</p>
+  <!-- 原有文字内容保持不变 -->
   
+  <!-- 添加成功消息容器 -->
+  <div id="successMessage" class="w3-panel w3-green w3-round" style="display:none">
+    <h3>Success!</h3>
+    <p>Your message has been sent successfully!</p>
+  </div>
+
+  <!-- 修改表单 -->
+  <form id="contactForm" onsubmit="return handleSubmit(event)">
+    <!-- 保持原有输入字段不变 -->
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+    <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+    <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2023-11-16T20:00"></p>
+    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+    <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+  </form>
+</div>
+
+<script>
+function handleSubmit(event) {
+  event.preventDefault(); // 阻止表单默认提交
+  
+  // 检查表单验证
+  if (event.target.checkValidity()) {
+    // 显示成功消息
+    document.getElementById('successMessage').style.display = 'block';
+    
+    // 可选：重置表单
+    event.target.reset();
+    
+    // 自动隐藏成功消息（5秒后）
+    setTimeout(() => {
+      document.getElementById('successMessage').style.display = 'none';
+    }, 5000);
+  }
+  
+  return false; // 阻止表单提交
+}
+</script>
 <!-- End page content -->
 </div>
 
