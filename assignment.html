@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Home page</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Step</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  
+  <img class="w3-image" src="noodle.png"alt="Hamburger Catering" width="1600"height="300">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">🍜</h1> 
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="type.png" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Chongqing Noodles</h1><br>
+      <h5 class="w3-center">A Fiery Symphony of Flavors</h5>
+      <p class="w3-large">Nestled in the heart of China's mountainous southwest, Chongqing is a city famed for its bold cuisine, misty landscapes, and unapologetic love for spice. Among its culinary treasures, Chongqing Xiaomian (重庆小面) stands out as a humble yet iconic dish that captures the essence of the city's fiery spirit. More than just a bowl of noodles, it is a cultural emblem—a daily ritual for locals and an unforgettable experience for visitors.<br>
+        For Chongqingers, Xiaomian is more than breakfast—it's a way of life. The dish's affordability and speed make it a staple for office workers, students, and late-night revelers alike. Its addictive mala flavor even inspired a local saying: “No spice, no joy.”
+      </p>
+      <h5 class="w3-center">A Bite of History</h5>
+      <p class="w3-large">Chongqing noodles trace their roots to the city's bustling docks and working-class neighborhoods. Historically, laborers along the Yangtze River needed quick, affordable, and energizing meals to fuel their long days. Thus, Xiaomian was born—a simple dish of wheat noodles tossed in a punchy, aromatic sauce. Over time, it evolved into a beloved street food, with each vendor adding their own twist to the recipe. Today, it's a symbol of Chongqing's gritty charm and culinary ingenuity.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Step-by-Step</h1><br>
+      <h4>STEP1:Prepare the Seasoning Base</h4>
+      <p class="w3-text-grey">In a large bowl, combine the following ingredients:<br>
+      
+        Chopped pickled mustard tuber (榨菜末)
+        2 tables poons chili oil (辣椒油)<br>
+        2 tables poons light soy sauce (生抽)
+        Minced ginger and garlic (姜蒜末)<br>
+        Chopped green onions (葱花)
+        A pinch of Sichuan pepper powder (花椒粉)<br>
+        Toasted white sesame seeds (白芝麻)
+        A small amount of lard (猪油)<br>
+        Salt (盐) and chicken powder (鸡精) to taste
+      </p><br>
+    
+      <h4>STEP2:Noodles and Vegetables</h4>
+      <p class="w3-text-grey">1.Bring a pot of sufficient water to a boil.<br>
+        2.Add noodles and green vegetables to the boiling water.<br>
+        3.Cook until the noodles are tender and the greens are vibrant.</p><br>
+    
+      <h4>STEP 3: Assemble the Dish</h4>
+      <p class="w3-text-grey">1.Once cooked, drain the noodles and vegetables, then transfer them directly into the prepared seasoning bowl.<br>
+        2.Mix thoroughly to dissolve the lard and evenly coat the noodles with the flavorful sauce.<br>
+        3.Top your bowl with a crispy fried egg for extra richness and texture!</p><br>
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="step.png" class="w3-round w3-image" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>This aromatic and spicy Chongqing-style noodle dish is a beloved street food classic. Perfect for a quick, satisfying meal that packs a punch of flavor! Discover the soul of Chongqing, one fiery noodle at a time.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Xiaomian Restaurant, 55nd Living St, 401122 Chongqing, CQ</b></p>
+    <p>You can also contact us by phone 59584052 or email 24462578@life.hkbu.edu.hk, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
